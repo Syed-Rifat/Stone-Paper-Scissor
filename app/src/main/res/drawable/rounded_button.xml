@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+    <solid android:color="#FFFFFF"/> <!-- Background color -->
+    <size
+        android:width="100dp"
+        android:height="100dp" /> <!-- Button size -->
+</shape>
+
+<!--For border -->
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+    <!--<layer-list xmlns:android="http://schemas.android.com/apk/res/android">-->
+    <!--    <item>-->
+    <!--        <shape-->
+    <!--            android:shape="oval">-->
+    <!--            <solid android:color="#FFFFFF"/> &lt;!&ndash; Background color &ndash;&gt;-->
+    <!--            <size android:width="100dp" android:height="100dp"/>-->
+    <!--        </shape>-->
+    <!--    </item>-->
+    <!--    <item>-->
+    <!--        <shape-->
+    <!--            android:shape="oval">-->
+    <!--            <solid android:color="#000000" /> &lt;!&ndash; Border color &ndash;&gt;-->
+    <!--            <stroke android:width="2dp" android:color="#000000"/> &lt;!&ndash; Border thickness &ndash;&gt;-->
+    <!--            <size android:width="100dp" android:height="100dp"/>-->
+    <!--        </shape>-->
+    <!--    </item>-->
+    <!--</layer-list>-->

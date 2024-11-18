@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "887903031850",
+    "project_id": "stone-paper-scissors-baust",
+    "storage_bucket": "stone-paper-scissors-baust.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:887903031850:android:407e62683ebaa7367da953",
+        "android_client_info": {
+          "package_name": "com.sdrt.stonepaperscissors"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCG1flF9wbP-4TdDksdXYlsGwwBoh6jrEU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
