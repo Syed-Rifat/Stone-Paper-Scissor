@@ -17,7 +17,7 @@ public class SplashActivity extends AppCompatActivity {
 
         // Delay and launch MainActivity
         new Handler().postDelayed(() -> {
-            Intent intent = new Intent(SplashActivity.this, MainActivity.class);
+            Intent intent = new Intent(SplashActivity.this, GameMenuActivity.class);
             startActivity(intent);
             finish();
         }, SPLASH_TIME_OUT);

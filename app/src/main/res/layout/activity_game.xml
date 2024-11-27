@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#FFFFFF">
+
+    <!-- Opponent's Choice -->
+    <TextView
+        android:id="@+id/opponentChoice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Opponent: Waiting..."
+        android:textSize="18sp"
+        android:layout_marginTop="32dp" />
+
+    <!-- Scoreboard -->
+    <TextView
+        android:id="@+id/scoreBoard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Score: You 0 - 0 Opponent"
+        android:textSize="16sp"
+        android:layout_below="@id/opponentChoice"
+        android:layout_marginTop="16dp" />
+
+    <!-- Player Choices -->
+    <LinearLayout
+        android:id="@+id/playerChoices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="32dp">
+
+        <!-- Rock Button -->
+        <Button
+            android:id="@+id/btnRock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rock"
+            android:layout_margin="8dp" />
+
+        <!-- Paper Button -->
+        <Button
+            android:id="@+id/btnPaper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Paper"
+            android:layout_margin="8dp" />
+
+        <!-- Scissors Button -->
+        <Button
+            android:id="@+id/btnScissors"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Scissors"
+            android:layout_margin="8dp" />
+    </LinearLayout>
+
+    <!-- Status Message -->
+    <TextView
+        android:id="@+id/gameStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/playerChoices"
+        android:text="Make your move!"
+        android:textSize="16sp"
+        android:textColor="#000000" />
+
+</RelativeLayout>
