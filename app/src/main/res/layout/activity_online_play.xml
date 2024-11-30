@@ -1,24 +1,48 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:gravity="center"
-    android:padding="16dp">
+    android:padding="16dp"
+    android:background="#F4F6F8"> <!-- Light background for better contrast -->
 
+  <!-- Title TextView -->
+  <TextView
+      android:id="@+id/titleTextView"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Online Play"
+      android:background="#081b31"
+      android:textColor="#FFFFFF"
+      android:textSize="24sp"
+      android:gravity="center"
+      android:padding="16dp"
+      android:layout_marginTop="-50dp"
+      android:layout_marginBottom="100dp"
+      android:textStyle="bold"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toRightOf="parent" />
+
+  <!-- Create Game Button -->
   <Button
       android:id="@+id/createGameButton"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:text="Create Game"
-      android:background="#081b31"
+      android:textSize="18sp"
       android:textColor="#FFFFFF"
-      android:layout_marginBottom="16dp" />
+      android:backgroundTint="#460B9B" />
 
+  <!-- Join Game Button -->
   <Button
       android:id="@+id/joinGameButton"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:text="Join Game"
-      android:background="#081b31"
-      android:textColor="#FFFFFF" />
+      android:textSize="18sp"
+      android:layout_marginTop="30dp"
+      android:textColor="#FFFFFF"
+      android:backgroundTint="#449E49"/>
 </LinearLayout>

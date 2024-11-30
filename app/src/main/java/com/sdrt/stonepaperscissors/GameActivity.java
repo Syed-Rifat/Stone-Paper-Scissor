@@ -1,8 +1,11 @@
 package com.sdrt.stonepaperscissors;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -18,7 +21,7 @@ import com.google.firebase.database.ValueEventListener;
 public class GameActivity extends AppCompatActivity {
 
     private TextView opponentChoice, scoreBoard, gameStatus;
-    private Button btnRock, btnPaper, btnScissors;
+    private ImageButton btnRock, btnPaper, btnScissors;
 
     private String gameCode;
     private String playerRole; // "host" or "guest"
@@ -85,12 +88,16 @@ public class GameActivity extends AppCompatActivity {
             String result = calculateWinner(playerMove, opponentMove);
             if (result.equals("win")) {
                 playerScore++;
-                gameStatus.setText("You won this round!");
+                gameStatus.setText("You won this round!");  // Set the text
+                gameStatus.setTextColor(Color.GREEN);  // Set the text color to green
+
             } else if (result.equals("lose")) {
                 opponentScore++;
                 gameStatus.setText("You lost this round!");
+                gameStatus.setTextColor(Color.RED);
             } else {
                 gameStatus.setText("It's a tie!");
+                gameStatus.setTextColor(Color.YELLOW);
             }
 
             // Update scores

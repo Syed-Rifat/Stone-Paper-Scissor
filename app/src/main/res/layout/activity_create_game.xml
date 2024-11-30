@@ -3,22 +3,50 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    android:padding="16dp">
+    android:padding="20dp"
+    android:background="#F4F6F8"> <!-- Light background for better contrast -->
 
+    <!-- Game Code Display -->
     <TextView
         android:id="@+id/gameCodeTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Game Code: Generating..."
-        android:textSize="20sp"
-        android:layout_marginBottom="16dp" />
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"
+        android:padding="10dp"
+        android:background="#FFFFFF"
+        android:elevation="4dp"
+        android:textColor="#344955"
+        android:paddingHorizontal="20dp"
+        android:layout_gravity="center_horizontal"/>
 
+    <!-- Status Text -->
     <TextView
         android:id="@+id/statusTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Waiting for opponent to join..."
+        android:textSize="18sp"
+        android:layout_marginBottom="20dp"
+        android:textColor="#577399"
+        android:paddingHorizontal="16dp"
+        android:layout_gravity="center_horizontal"/>
+
+    <!-- Copy Game Code Button -->
+    <Button
+        android:id="@+id/copyGameCodeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Copy Game Code"
         android:textSize="16sp"
-        android:textColor="#081b31"
-        android:layout_marginBottom="16dp" />
+        android:textStyle="bold"
+        android:paddingHorizontal="24dp"
+        android:paddingVertical="12dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#FFBB86FC"
+        android:textColor="#FFFFFF"
+        android:elevation="6dp"
+        android:layout_gravity="center_horizontal" />
 </LinearLayout>

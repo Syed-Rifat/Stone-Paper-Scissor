@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp"
-    android:background="#FFFFFF">
+    android:background="#F4F6F8">
 
     <!-- Opponent's Choice -->
     <TextView
@@ -13,7 +13,15 @@
         android:layout_centerHorizontal="true"
         android:text="Opponent: Waiting..."
         android:textSize="18sp"
-        android:layout_marginTop="32dp" />
+        android:textColor="#344955"
+        android:layout_marginTop="32dp"
+        android:padding="8dp"
+        android:background="#FFFFFF"
+        android:elevation="4dp"
+        android:layout_gravity="center_horizontal"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="8dp"
+        android:backgroundTint="#FFFFFF" />
 
     <!-- Scoreboard -->
     <TextView
@@ -23,8 +31,16 @@
         android:layout_centerHorizontal="true"
         android:text="Score: You 0 - 0 Opponent"
         android:textSize="16sp"
+        android:textColor="#344955"
         android:layout_below="@id/opponentChoice"
-        android:layout_marginTop="16dp" />
+        android:layout_marginTop="70dp"
+        android:padding="8dp"
+        android:background="#FFFFFF"
+        android:elevation="4dp"
+        android:layout_gravity="center_horizontal"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="8dp"
+        android:backgroundTint="#FFFFFF" />
 
     <!-- Player Choices -->
     <LinearLayout
@@ -37,28 +53,40 @@
         android:layout_marginBottom="32dp">
 
         <!-- Rock Button -->
-        <Button
+        <ImageButton
             android:id="@+id/btnRock"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Rock"
-            android:layout_margin="8dp" />
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/rock"
+            android:background="@drawable/rounded_button"
+            android:scaleType="centerCrop"
+            android:padding="8dp"
+            android:contentDescription="@string/rock" />
 
         <!-- Paper Button -->
-        <Button
+
+        <ImageButton
             android:id="@+id/btnPaper"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Paper"
-            android:layout_margin="8dp" />
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/paper"
+            android:background="@drawable/rounded_button"
+            android:scaleType="centerCrop"
+            android:padding="8dp"
+            android:layout_marginStart="24dp"
+            android:contentDescription="@string/paper" />
 
         <!-- Scissors Button -->
-        <Button
+        <ImageButton
             android:id="@+id/btnScissors"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Scissors"
-            android:layout_margin="8dp" />
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/scissors"
+            android:background="@drawable/rounded_button"
+            android:scaleType="centerCrop"
+            android:padding="8dp"
+            android:layout_marginStart="24dp"
+            android:contentDescription="@string/scissors" />
     </LinearLayout>
 
     <!-- Status Message -->
@@ -70,6 +98,14 @@
         android:layout_above="@id/playerChoices"
         android:text="Make your move!"
         android:textSize="16sp"
-        android:textColor="#000000" />
+        android:textColor="#344955"
+        android:layout_marginBottom="100dp"
+        android:padding="8dp"
+        android:background="#FFFFFF"
+        android:elevation="4dp"
+        android:layout_gravity="center_horizontal"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="8dp"
+        android:backgroundTint="#FFFFFF"/>
 
 </RelativeLayout>

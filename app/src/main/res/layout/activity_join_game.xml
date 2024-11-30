@@ -3,21 +3,44 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    android:padding="16dp">
+    android:padding="16dp"
+    android:background="#F4F6F8"> <!-- Light background for better contrast -->
+
+    <!-- Title TextView (Optional) -->
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Game Code"
+        android:textSize="24sp"
+        android:textColor="#081b31"
+        android:layout_marginBottom="32dp"
+        android:gravity="center"
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/gameCodeEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Enter Game Code"
-        android:padding="12dp"
-        android:layout_marginBottom="16dp" />
+        android:textSize="16sp"
+        android:textColor="#344955"
+        android:background="@drawable/edit_text_border"
+        android:padding="16dp"
+        android:layout_margin="50dp"
+        android:layout_marginBottom="24dp"
+        android:inputType="text" />
 
+
+    <!-- Join Game Button with a simple color -->
     <Button
         android:id="@+id/joinGameButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Join Game"
-        android:background="#081b31"
-        android:textColor="#FFFFFF" />
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center"
+        android:backgroundTint="#4CAF50"/>
 </LinearLayout>
